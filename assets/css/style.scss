@@ -1,0 +1,70 @@
+---
+---
+
+// Brand colors
+$brand-teal: #00F5D4;
+$brand-dark: #0A0A0F;
+$brand-text: #E0E0E0;
+$brand-muted: #888888;
+
+@import "minima";
+
+// Override body
+body {
+  background-color: $brand-dark;
+  color: $brand-text;
+}
+
+// Links
+a {
+  color: $brand-teal;
+
+  &:visited {
+    color: darken($brand-teal, 15%);
+  }
+
+  &:hover {
+    color: lighten($brand-teal, 10%);
+  }
+}
+
+// Site header
+.site-header {
+  background-color: darken($brand-dark, 2%);
+  border-bottom: 1px solid $brand-teal;
+}
+
+.site-title {
+  color: $brand-teal !important;
+  font-weight: 700;
+}
+
+// Post titles
+.post-title,
+.post-link {
+  color: $brand-teal;
+}
+
+// Footer
+.site-footer {
+  background-color: darken($brand-dark, 2%);
+  border-top: 1px solid rgba($brand-teal, 0.3);
+  color: $brand-muted;
+}
+
+// Code blocks
+pre,
+code {
+  background-color: lighten($brand-dark, 5%);
+  border: 1px solid rgba($brand-teal, 0.2);
+  color: $brand-text;
+}
+
+// Navigation links
+.page-link {
+  color: $brand-text !important;
+
+  &:hover {
+    color: $brand-teal !important;
+  }
+}

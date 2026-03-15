@@ -1,0 +1,25 @@
+title: Permeate Security
+description: >-
+  Autonomous penetration testing insights. Research, techniques, and lessons
+  from building systems that find every way through — then close them all.
+url: "https://deckerops.github.io"
+baseurl: "/decker-blog"
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Social / footer
+twitter_username: ""
+github_username: DeckerOps
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
